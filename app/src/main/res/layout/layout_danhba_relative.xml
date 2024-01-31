@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Tiêu đề danh bạ -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh Bạ"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Ô tìm kiếm -->
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tìm kiếm người liên hệ..."
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@drawable/rounded2"
+        android:drawableStart="@android:drawable/ic_search_category_default"
+        android:drawablePadding="8dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginBottom="16dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutContact1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSearch"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- Hình ảnh đại diện -->
+        <ImageView
+            android:id="@+id/imageViewAvatar1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/avatar"
+            />
+
+        <!-- Thông tin liên lạc -->
+        <LinearLayout
+            android:id="@+id/linearLayoutContactInfo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/imageViewAvatar1"
+            android:layout_marginStart="16dp">
+
+            <!-- Tên -->
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Người dùng 1"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <!-- Số điện thoại -->
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0123456789"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutContact2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayoutContact1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="420dp">
+
+
+        <ImageView
+            android:id="@+id/imageViewLock"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/star"
+            android:layout_marginEnd="100dp"/>
+
+
+        <ImageView
+            android:id="@+id/imageViewMail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/clock"
+            android:layout_toEndOf="@id/imageViewLock"
+            android:layout_marginEnd="100dp"/>
+
+
+        <ImageView
+            android:id="@+id/imageViewMessenger"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/phonebook"
+            android:layout_toEndOf="@id/imageViewMail"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

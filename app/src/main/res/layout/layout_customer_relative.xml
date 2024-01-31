@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập Thông Tin Khách Hàng"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Ô nhập Tên -->
+    <EditText
+        android:id="@+id/editTextName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Khách Hàng"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginBottom="25dp"/>
+
+    <!-- Ô nhập Email -->
+    <EditText
+        android:id="@+id/editTextEmail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:layout_below="@id/editTextName2"
+        android:layout_marginBottom="25dp"/>
+
+    <!-- Ô nhập Số Điện Thoại -->
+    <EditText
+        android:id="@+id/editTextPhoneNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số Điện Thoại"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:layout_below="@id/editTextEmail2"
+        android:layout_marginBottom="25dp"/>
+
+    <!-- Ô nhập Địa chỉ liên lạc -->
+    <EditText
+        android:id="@+id/editTextAddress2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Địa chỉ liên lạc"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_below="@id/editTextPhoneNumber2"
+        android:layout_marginBottom="25dp"/>
+
+    <!-- Ô nhập Căn cước công dân -->
+    <EditText
+        android:id="@+id/editTextIDCard2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Căn cước công dân"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_below="@id/editTextAddress2"
+        android:layout_marginBottom="25dp"/>
+
+    <!-- Ô nhập Ngày sinh -->
+    <EditText
+        android:id="@+id/editTextBirthDate2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ngày sinh"
+        android:inputType="date"
+        android:padding="10dp"
+        android:layout_below="@id/editTextIDCard2"
+        android:layout_marginBottom="25dp"/>
+
+    <!-- Ô nhập Sở thích -->
+    <EditText
+        android:id="@+id/editTextHobbies2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sở thích"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_below="@id/editTextBirthDate2"
+        android:layout_marginBottom="25dp"/>
+
+    <!-- Button Xác Nhận -->
+    <Button
+        android:id="@+id/buttonConfirm2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xác Nhận"
+        android:layout_below="@id/editTextHobbies2"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@android:color/darker_gray"
+        android:textColor="@color/black"
+        android:padding="12dp"/>
+</RelativeLayout>

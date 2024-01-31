@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_bright"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/outerLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <ImageView
+            android:src="@drawable/back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="17dp"/>
+        <TextView
+            android:text="Register\nAccount"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/outerLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:padding="20dp"
+        android:background="@drawable/rounded_border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/outerLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_input">
+            <ImageView
+                android:id="@+id/imageView"
+                android:src="@drawable/email"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                />
+
+            <EditText
+                android:id="@+id/editEmailRegister"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:hint="Email or username..."
+                android:background="@android:color/transparent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/outerLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_input">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:src="@drawable/password"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"/>
+
+
+            <EditText
+                android:id="@+id/editPasswordRegister"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Password..."
+                android:background="@android:color/transparent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:inputType="textPassword"
+/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_input">
+            <ImageView
+                android:src="@drawable/password"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"/>
+
+
+            <EditText
+                android:id="@+id/editPasswordRegisterRepeat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Repeat Password..."
+                android:background="@android:color/transparent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:inputType="textPassword"
+/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/outerLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:padding="5dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:text="Forgot Password?"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textAlignment="viewEnd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_light"
+            android:padding="10dp"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dont have account? Sign up"
+        android:background="@android:color/white"
+        android:textSize="18dp"
+        android:textAlignment="center">
+
+    </TextView>
+
+</LinearLayout>
